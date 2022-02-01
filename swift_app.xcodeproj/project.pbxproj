@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		584666F427A96E060076597E /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584666F327A96E060076597E /* ClassA.swift */; };
 		58F99F2827A3BE180014BD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F99F2727A3BE180014BD4F /* AppDelegate.swift */; };
 		58F99F2A27A3BE180014BD4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F99F2927A3BE180014BD4F /* SceneDelegate.swift */; };
 		58F99F2C27A3BE180014BD4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F99F2B27A3BE180014BD4F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		584666F027A96C420076597E /* swift_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_app.entitlements; sourceTree = "<group>"; };
+		584666F327A96E060076597E /* ClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassA.swift; sourceTree = "<group>"; };
 		58F99F2427A3BE180014BD4F /* swift_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F99F2727A3BE180014BD4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F99F2927A3BE180014BD4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		58F99F2627A3BE180014BD4F /* swift_app */ = {
 			isa = PBXGroup;
 			children = (
+				584666F027A96C420076597E /* swift_app.entitlements */,
 				58F99F2727A3BE180014BD4F /* AppDelegate.swift */,
 				58F99F2927A3BE180014BD4F /* SceneDelegate.swift */,
 				58F99F2B27A3BE180014BD4F /* ViewController.swift */,
@@ -63,6 +67,7 @@
 				58F99F3027A3BE1A0014BD4F /* Assets.xcassets */,
 				58F99F3227A3BE1A0014BD4F /* LaunchScreen.storyboard */,
 				58F99F3527A3BE1A0014BD4F /* Info.plist */,
+				584666F327A96E060076597E /* ClassA.swift */,
 			);
 			path = swift_app;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 58F99F1B27A3BE180014BD4F;
 			productRefGroup = 58F99F2527A3BE180014BD4F /* Products */;
@@ -140,6 +146,7 @@
 			files = (
 				58F99F2C27A3BE180014BD4F /* ViewController.swift in Sources */,
 				58F99F2827A3BE180014BD4F /* AppDelegate.swift in Sources */,
+				584666F427A96E060076597E /* ClassA.swift in Sources */,
 				58F99F2A27A3BE180014BD4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +177,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -231,6 +239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -287,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swift_app/swift_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LGTX2WK5L4;
@@ -295,13 +305,15 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.bepo.swift-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -315,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swift_app/swift_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LGTX2WK5L4;
@@ -323,13 +336,15 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.bepo.swift-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -7,6 +7,13 @@
 
 import UIKit
 
+class B {
+    let a = 1
+    let b = 2
+    let c = 2
+    let alpahabet = 4
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
